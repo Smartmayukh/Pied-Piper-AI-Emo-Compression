@@ -10,7 +10,7 @@
 
 My code defines a function Piper_Compress that takes in a base audio file path, segment length, Vosk model path, and high/low bitrate values as inputs. The function splits the audio file into segments of the given length, converts each segment into text using the Vosk model, performs sentiment analysis on the text using the Hugging Face Transformers library, and compresses each segment into either high or low bitrate mp3 files based on the sentiment analysis result. Finally, all the compressed segments are concatenated into a single output audio file named "Pied_Pipered_Output.mp3".
 
-I recently found a paper titled as "The Effects of MP3 Compression on Perceived Emotional Characteristics in Musical Instruments" 
+I got inspiration of this model from the paper titled as "The Effects of MP3 Compression on Perceived Emotional Characteristics in Musical Instruments" 
 
 https://www.aes.org/tmpFiles/elib/20230406/18523.pdf
 
