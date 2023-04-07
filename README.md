@@ -115,7 +115,7 @@ from Pied_Piper_AI_Emo_Compression import main
 main.piper_compress("base_audio.wav",segment_length=31,model_path="C:\\Users\\Mayukhmali Das\\Desktop\\Pied_Piper_AI_Emo_Compression\\Pied_Piper_AI_Emo_Compression\\model",high_bitrate="128k",low_bitrate="64k")
 </pre>
 
-You have to install Vosk, Pytorch, transformers before running the code.
+You have to install Vosk, Pydub, Pytorch, transformers before running the code.
 
  <a href="#"><img align="right" src="https://user-images.githubusercontent.com/64318469/230574629-0fe766e0-8a9f-4700-8e7e-0fdffff0dd94.png" width="400 " height="300" /></a>
 ## Explanation behind the module name 🤭
