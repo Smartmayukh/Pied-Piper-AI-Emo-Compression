@@ -123,9 +123,10 @@ if sentiment == 'POSITIVE':
 
             final_audio += AudioSegment.from_mp3(os.path.join(output_dir, f"segment_{count}_low.mp3"))
             
- using a low_bitrate of 8k and high_bitrate of 128k will give noticable transitions. But to improve listening experience use 64k-128k or 32k-128k combinations. 
  </pre>
  
+ Using a low_bitrate of 8k and high_bitrate of 128k will give noticable transitions. But to improve listening experience use 64k-128k or 32k-128k combinations. 
+
 
 
 # Installation Guide 
