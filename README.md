@@ -8,7 +8,7 @@ Copyright (c) 2023 Mayukhmali Das
 
 <p float="center">
   <img alig src="https://user-images.githubusercontent.com/64318469/230570978-cc1a1427-3ff6-45f9-9545-af2635eb10df.png"  height="230"/>  
-  <img src="https://user-images.githubusercontent.com/64318469/230597101-04234d23-99e4-4bcd-ace7-f02e002a02ce.png" alt="mayukhmali" height="230" />
+  <img src="https://user-images.githubusercontent.com/64318469/230597101-04234d23-99e4-4bcd-ace7-f02e002a02ce.png" height="230" />
 </p>
 
 
@@ -141,7 +141,13 @@ You have to install Vosk, Pydub, Pytorch, transformers before running the code.
 
 
 ## Explanation behind the module name 🤭
-  <a href="#"><img align="center" src="https://user-images.githubusercontent.com/64318469/230574629-0fe766e0-8a9f-4700-8e7e-0fdffff0dd94.png" width="400 " height="300" /></a>
+
+<p float="center">
+  <img alig src="https://user-images.githubusercontent.com/64318469/230574629-0fe766e0-8a9f-4700-8e7e-0fdffff0dd94.png"  height="230"/>  
+  <img src="https://user-images.githubusercontent.com/64318469/230597669-86d72715-4394-4927-9b64-32fd06c85ee3.png"  height="230" />
+</p>
+
+
   </br>
   
   </br>
