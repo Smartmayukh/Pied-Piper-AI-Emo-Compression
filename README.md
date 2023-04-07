@@ -1,4 +1,4 @@
-# Pied-Piper-Emo-Compression
+# Pied-Piper-AI-Emo-Compression
 
 ## Emotion based Audio Compression 
 
