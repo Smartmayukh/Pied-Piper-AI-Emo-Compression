@@ -77,3 +77,37 @@ the
 [{'label': 'POSITIVE', 'score': 0.9635980725288391}]
 POSITIVE
 </pre>
+
+Based on the emotions the compression of the audio segments are modified and finally concatenated. The process is explained below : 
+
+<pre>
+if sentiment == 'POSITIVE':
+            
+            wave_file = AudioSegment.from_wav(os.path.join(output_dir, f"segment_{count}.wav"))
+
+            # Set the bitrate and export as mp3
+            wave_file.export(os.path.join(output_dir, f"segment_{count}_high.mp3"), format="mp3", bitrate=high_bitrate)
+
+            final_audio += AudioSegment.from_mp3(os.path.join(output_dir, f"segment_{count}_high.mp3"))
+
+        else:
+         
+            wave_file = AudioSegment.from_wav(os.path.join(output_dir, f"segment_{count}.wav"))
+
+            # Set the bitrate and export as mp3
+            wave_file.export(os.path.join(output_dir, f"segment_{count}_low.mp3"), format="mp3", bitrate=low_bitrate)
+
+            final_audio += AudioSegment.from_mp3(os.path.join(output_dir, f"segment_{count}_low.mp3"))
+ </pre>
+ 
+ <a href="#"><img align="right" src="https://user-images.githubusercontent.com/64318469/230574629-0fe766e0-8a9f-4700-8e7e-0fdffff0dd94.png" width="400 " height="300" /></a>
+ 
+## Explanation behind the module name 🤭
+ 
+The name of the module is inspired from Pied Piper from Silicon Valley. 
+ 
+"Pied Piper" is a fictional company from the TV series "Silicon Valley", which is a comedy-drama that satirizes the culture and practices of the tech industry in Silicon Valley, California. The company is founded by Richard Hendricks, a young software engineer, and his friends, and it develops a revolutionary data compression algorithm that could change the industry. The name "Pied Piper" is a reference to the fairy tale of the same name, in which a man uses his musical talents to lead rats out of a town. In the show, the name is meant to suggest that the company can lead the tech industry out of its problems and toward a better future.
+
+
+
+
