@@ -28,7 +28,7 @@ So I decided to come up with a python module that can change the compression of 
 ### Song I have chosen is "Castle on the Hill" -Ed Sheeran
 
 
-# Music to text using Vosk
+# Audio to text using Vosk
 ### Below you can see the vosk generated subtitles of the song. I split the audio file into segments of 31 seconds. Note as the training dataset for the vosk model is not a large, so the translation is not too accurate.
 
 <pre>
@@ -96,7 +96,7 @@ the
 POSITIVE
 </pre>
 
-# Comression based on Emotions 
+# Compression based on Emotions 
 
 Based on the emotions the compression of the audio segments are modified and finally concatenated. The process is explained below : 
 
