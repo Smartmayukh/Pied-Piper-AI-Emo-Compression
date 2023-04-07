@@ -143,8 +143,8 @@ You have to install Vosk, Pydub, Pytorch, transformers before running the code.
 ## Explanation behind the module name 🤭
 
 <p float="center">
-  <img alig src="https://user-images.githubusercontent.com/64318469/230574629-0fe766e0-8a9f-4700-8e7e-0fdffff0dd94.png"  height="230"/>  
-  <img src="https://user-images.githubusercontent.com/64318469/230597669-86d72715-4394-4927-9b64-32fd06c85ee3.png"  height="230" />
+  <img alig src="https://user-images.githubusercontent.com/64318469/230574629-0fe766e0-8a9f-4700-8e7e-0fdffff0dd94.png"  height="250"/>  
+  <img src="https://user-images.githubusercontent.com/64318469/230597669-86d72715-4394-4927-9b64-32fd06c85ee3.png"  height="250" />
 </p>
 
 
