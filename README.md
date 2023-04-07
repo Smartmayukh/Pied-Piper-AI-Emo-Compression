@@ -8,7 +8,11 @@
 
 
 
-My code defines a function Piper_Compress that takes in a base audio file path, segment length, Vosk model path, and high/low bitrate values as inputs. The function splits the audio file into segments of the given length, converts each segment into text using the Vosk model, performs sentiment analysis on the text using the Hugging Face Transformers library, and compresses each segment into either high or low bitrate mp3 files based on the sentiment analysis result. Finally, all the compressed segments are concatenated into a single output audio file named "Pied_Pipered_Output.mp3".
+My code defines a function Piper_Compress that takes in a base audio file path, segment length, Vosk model path, and high/low bitrate values as inputs. 
+<pre>
+def piper_compress(base_audio_path, segment_length, model_path,high_bitrate,low_bitrate):
+</pre>
+The function splits the audio file into segments of the given length, converts each segment into text using the Vosk model, performs sentiment analysis on the text using the Hugging Face Transformers library, and compresses each segment into either high or low bitrate mp3 files based on the sentiment analysis result. Finally, all the compressed segments are concatenated into a single output audio file named "Pied_Pipered_Output.mp3".
 
 I got inspiration of this model from the paper titled as "The Effects of MP3 Compression on Perceived Emotional Characteristics in Musical Instruments" 
 
@@ -21,7 +25,7 @@ So I decided to come up with a python module that can change the compression of 
 
 ## Song I have chosen is "Castle on the Hill" -Ed Sheeran
 
-## Below you can see the vosk generated subtitles of the song. I split the audio file into segments of 31 seconds. Note as the training dataset for the vosk model is not a large, so the translation is not too accurate.
+### Below you can see the vosk generated subtitles of the song. I split the audio file into segments of 31 seconds. Note as the training dataset for the vosk model is not a large, so the translation is not too accurate.
 
 <pre>
 ['when', 'i', 'was', 'six', 'years', 'old', 'and', 'broke', 'my', 'leg', 'i', 'was', 'running', 'from', 'my', 'brother', 'and', 'his', 'friends', 'tasty', 'and', 'sweet', 'perfume', 'mathematics', 'mounting', 'wrote', 'down', 'what', 'was', 'younger', 'then']
@@ -36,7 +40,7 @@ So I decided to come up with a python module that can change the compression of 
 </pre>
 
 
-## Sentiment Analysis using Hugging face "distilbert-base-uncased-finetuned-sst-2-english" model
+### Sentiment Analysis using Hugging face "distilbert-base-uncased-finetuned-sst-2-english" model
 
 
 
@@ -100,8 +104,20 @@ if sentiment == 'POSITIVE':
             final_audio += AudioSegment.from_mp3(os.path.join(output_dir, f"segment_{count}_low.mp3"))
  </pre>
  
+
+
+## Installation Guide 
+
+Run test.py to run the module. 
+<pre>
+from Pied_Piper_AI_Emo_Compression import main
+
+main.piper_compress("base_audio.wav",segment_length=31,model_path="C:\\Users\\Mayukhmali Das\\Desktop\\Pied_Piper_AI_Emo_Compression\\Pied_Piper_AI_Emo_Compression\\model",high_bitrate="128k",low_bitrate="64k")
+</pre>
+
+You have to install Vosk, Pytorch, transformers before running the code.
+
  <a href="#"><img align="right" src="https://user-images.githubusercontent.com/64318469/230574629-0fe766e0-8a9f-4700-8e7e-0fdffff0dd94.png" width="400 " height="300" /></a>
- 
 ## Explanation behind the module name 🤭
  
 The name of the module is inspired from Pied Piper from Silicon Valley. 
