@@ -4,7 +4,7 @@
 
 
 
-### Copyright (c) 2023 Mayukhmali Das
+Copyright (c) 2023 Mayukhmali Das
 
 <a href="#"><img align="right" src="https://user-images.githubusercontent.com/64318469/230570978-cc1a1427-3ff6-45f9-9545-af2635eb10df.png" width="400 " height="250" /></a>
 
@@ -25,8 +25,10 @@ This paper examines the impact of MP3 compression on the emotional characteristi
 
 So I decided to come up with a python module that can change the compression of an audio file based on emotions. 
 
-## Song I have chosen is "Castle on the Hill" -Ed Sheeran
+### Song I have chosen is "Castle on the Hill" -Ed Sheeran
 
+
+# Music to text using Vosk
 ### Below you can see the vosk generated subtitles of the song. I split the audio file into segments of 31 seconds. Note as the training dataset for the vosk model is not a large, so the translation is not too accurate.
 
 <pre>
@@ -41,10 +43,20 @@ So I decided to come up with a python module that can change the compression of 
 ['the']
 </pre>
 
+Link for downloading the Vosk Model https://alphacephei.com/vosk/models
 
-### Sentiment Analysis using Hugging face "distilbert-base-uncased-finetuned-sst-2-english" model
+Download a model from the Vosk website and save in the model folder. The file is too big to upload in Github. 
+
+Vosk API is a speech recognition toolkit developed by Alpha Cephei Inc., which is based on the Kaldi toolkit. Kaldi is a free and open-source toolkit for speech recognition developed by the Johns Hopkins University Speech and Language Processing Group. It uses modern machine learning techniques, including deep neural networks, to achieve high accuracy and efficiency.
+
+The offline speech recognition is done with the help of Dmytro Nikolaiev work referenced below: https://gitlab.com/Winston-90/foreign_speech_recognition/-/tree/main/timestamps
 
 
+
+# Sentiment Analysis using Hugging face 
+
+
+I have used the "distilbert-base-uncased-finetuned-sst-2-english" model. Below you can find the sentiments of each translated subsegments of the song. 
 
 <pre>
 when i was six years old and broke my leg i was running from my brother and his friends tasty and sweet perfume mathematics mounting wrote down what was younger then
@@ -84,6 +96,8 @@ the
 POSITIVE
 </pre>
 
+# Comression based on Emotions 
+
 Based on the emotions the compression of the audio segments are modified and finally concatenated. The process is explained below : 
 
 <pre>
@@ -108,7 +122,7 @@ if sentiment == 'POSITIVE':
  
 
 
-## Installation Guide 
+# Installation Guide 
 
 Run test.py to run the module. 
 <pre>
