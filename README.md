@@ -17,7 +17,7 @@ https://www.aes.org/tmpFiles/elib/20230406/18523.pdf
 
 This paper examines the impact of MP3 compression on the emotional characteristics by conducting listening tests. The experiment compared compressed and uncompressed samples at different bit rates across ten emotional categories. The results revealed that MP3 compression enhanced negative emotions like Mysterious, Shy, Scary, and Sad while diminishing positive emotions like Happy, Heroic, Romantic, Comic, and Calm. MP3 compression reduced positive emotions and amplified negative emotions such as Mysterious and Scary. 
 
-So I decided to come up with a python code that can change the compression of an audio file based on emotions. 
+So I decided to come up with a python module that can change the compression of an audio file based on emotions. 
 
 ## Song I have chosen is "Castle on the Hill" -Ed Sheeran
 
