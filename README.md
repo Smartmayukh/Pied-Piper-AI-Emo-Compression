@@ -7,8 +7,8 @@ Copyright (c) 2023 Mayukhmali Das
 </br>
 
 <p float="center">
-  <img alig src="https://user-images.githubusercontent.com/64318469/230570978-cc1a1427-3ff6-45f9-9545-af2635eb10df.png"  height="280"/>  
-  <img src="https://user-images.githubusercontent.com/64318469/230597101-04234d23-99e4-4bcd-ace7-f02e002a02ce.png" alt="mayukhmali" height="280" />
+  <img alig src="https://user-images.githubusercontent.com/64318469/230570978-cc1a1427-3ff6-45f9-9545-af2635eb10df.png"  height="230"/>  
+  <img src="https://user-images.githubusercontent.com/64318469/230597101-04234d23-99e4-4bcd-ace7-f02e002a02ce.png" alt="mayukhmali" height="230" />
 </p>
 
 
