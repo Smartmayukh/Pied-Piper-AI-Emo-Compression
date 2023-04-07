@@ -98,7 +98,7 @@ POSITIVE
 
 # Compression based on Emotions 
 
-Based on the emotions the compression of the audio segments are modified and finally concatenated. The process is explained below : 
+MP3 compression reduces positive emotions and amplifies negative emotions. Based on this fact the positive wav audio segments are compressed to mp3 files with higher bitrate than the negative audio segments. After this the audio files are concatenated. The process is explained below : 
 
 <pre>
 if sentiment == 'POSITIVE':
@@ -118,6 +118,8 @@ if sentiment == 'POSITIVE':
             wave_file.export(os.path.join(output_dir, f"segment_{count}_low.mp3"), format="mp3", bitrate=low_bitrate)
 
             final_audio += AudioSegment.from_mp3(os.path.join(output_dir, f"segment_{count}_low.mp3"))
+            
+ using a low_bitrate of 8k and high_bitrate of 128k will give noticable transitions. But to improve listening experience use 64k-128k or 32k-128k combinations. 
  </pre>
  
 
