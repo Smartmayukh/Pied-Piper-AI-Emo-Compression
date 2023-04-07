@@ -5,6 +5,11 @@
 
 
 <a href="#"><img align="right" src="https://user-images.githubusercontent.com/64318469/230570978-cc1a1427-3ff6-45f9-9545-af2635eb10df.png" width="400 " height="250" /></a>
+
+
+
+My code defines a function Piper_Compress that takes in a base audio file path, segment length, Vosk model path, and high/low bitrate values as inputs. The function splits the audio file into segments of the given length, converts each segment into text using the Vosk model, performs sentiment analysis on the text using the Hugging Face Transformers library, and compresses each segment into either high or low bitrate mp3 files based on the sentiment analysis result. Finally, all the compressed segments are concatenated into a single output audio file named "Pied_Pipered_Output.mp3".
+
 I recently found a paper titled as "The Effects of MP3 Compression on Perceived Emotional Characteristics in Musical Instruments" 
 
 https://www.aes.org/tmpFiles/elib/20230406/18523.pdf
@@ -13,10 +18,6 @@ https://www.aes.org/tmpFiles/elib/20230406/18523.pdf
 This paper examines the impact of MP3 compression on the emotional characteristics by conducting listening tests. The experiment compared compressed and uncompressed samples at different bit rates across ten emotional categories. The results revealed that MP3 compression enhanced negative emotions like Mysterious, Shy, Scary, and Sad while diminishing positive emotions like Happy, Heroic, Romantic, Comic, and Calm. MP3 compression reduced positive emotions and amplified negative emotions such as Mysterious and Scary. 
 
 So I decided to come up with a python code that can change the compression of an audio file based on emotions. 
-
-## Basic Idea behind Pied-Piper-AI-Emo-Compression
-
-My code defines a function Piper_Compress that takes in a base audio file path, segment length, Vosk model path, and high/low bitrate values as inputs. The function splits the audio file into segments of the given length, converts each segment into text using the Vosk model, performs sentiment analysis on the text using the Hugging Face Transformers library, and compresses each segment into either high or low bitrate mp3 files based on the sentiment analysis result. Finally, all the compressed segments are concatenated into a single output audio file named "Pied_Pipered_Output.mp3".
 
 ## Song I have chosen is "Castle on the Hill" -Ed Sheeran
 
